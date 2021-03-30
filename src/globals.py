@@ -16,15 +16,15 @@ import neopixel
 # LED Brightness Info
 LOCATION = 'Seattle'
 USE_DEFAULT_BRIGHT_DIM = False      # Use default sunrise sunset or use location based
-BEGIN_BRIGHTNESS = dt.time(7,0)     # Default dimming time
+BEGIN_BRIGHTNESS = dt.time(7,0)     # Default brightness time
 BEGIN_DIMMING = dt.time(18,0)       # Default dimming time
 BRIGHTNESS_LEVEL_DEF = 0.5          # Default brightness level between 0-1
 BRIGHTNESS_LEVEL_DIM = 0.1          # Brightness level for night, between 0-1
 
 
 # Blinking Info
-BLINK_DURATION_SECONDS = 60         # Script will be run every minute (60 seconds)
-BLINK_FREQUENCY = 1.0               # Frequency in which light will blind (seconds)
+BLINK_DURATION_SECONDS = 60         # Length script will run
+BLINK_FREQUENCY = 1.0               # Frequency in which light will blink (seconds)
 GUST_THRESHOLD = 10                 # LED will blind when gust exceeds this value
 USE_LIGHTNING_ANIMATION = True      # LED will blink color assigned to lightning RGB
 USE_GUST_ANIMATION = True           # LED will blink color assigned to gusts RGB
