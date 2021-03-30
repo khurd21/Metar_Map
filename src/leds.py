@@ -32,7 +32,7 @@ def _init_neopixel():
 def _init_iterations()->int:
     '''Returns number of iterations to occur based on global variables'''
     return (1
-            if globals.USE_GUST_ANIMATION or globals.USE_LIGHTNING_ANIMATION
+            if not (globals.USE_GUST_ANIMATION or globals.USE_LIGHTNING_ANIMATION)
             else int(globals.BLINK_DURATION_SECONDS // globals.BLINK_FREQUENCY)
             )
 
@@ -125,6 +125,5 @@ def drive_leds(conditions:dict, stations:list)->None:
         pixel_list.show()
         num_iterations -= 1
         _toggle_flip_flop()
-        print('I made it')
-        time.sleep(globals.BLINK_DURATION_SECONDS)
+        time.sleep(globals.BLINK_FREQUENCY)
     return
