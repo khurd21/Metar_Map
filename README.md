@@ -17,3 +17,9 @@ Desgined for Raspberry Pi. Make sure the data wire is connected to GPIO 18 and u
 
 - Type 'make install' in the base directory of project. This will install all needed modules for project inside of a virtual environment.
 - Type 'make run' in the base directory of project. This will execute the code.
+- A script is given to help with running a crontab. If you want to have the script run every 5 minutes, you can write the following code snippet in the terminal:
+
+```
+sudo crontab -e
+*/5 * * * * /home/pi/<absolute_path>/run_bot.sh
+```
