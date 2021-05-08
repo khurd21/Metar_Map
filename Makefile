@@ -17,3 +17,8 @@ run:
 reset:
 	@echo "Resetting leds."
 	sudo ./env/bin/python3 src/reset.py;
+
+.PHONY: test
+test:
+	@echo "Testing leds."
+	sudo ./env/bin/python3 src/test.py;
