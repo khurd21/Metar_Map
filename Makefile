@@ -12,3 +12,8 @@ install:
 run:
 	@echo "Running program."
 	sudo ./env/bin/python3 src/main.py;
+
+.PHONY: reset
+reset:
+	@echo "Resetting leds."
+	sudo ./env/bin/python3 src/reset.py;

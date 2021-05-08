@@ -21,5 +21,19 @@ Desgined for Raspberry Pi. Make sure the data wire is connected to GPIO 18 and u
 
 ```
 sudo crontab -e
-*/5 * * * * /home/pi/<absolute_path>/run_bot.sh
+*/5 * * * * /home/pi/<absolute_path>/reset.sh; /home/pi/<absolute_path>/run_bot.sh
 ```
+
+Alternatively, what I did was the following:
+
+```
+sudo crontab -e
+@reboot /home/pi/<absolute_path>/wrapper.sh
+```
+
+Please note you may have to update the path to file in the .sh file. You make also have to give it executable permissions:
+
+```
+chmod +x run_bot.sh
+```
+You can also create a wrapper.sh script to make reset.sh execute before run_bot.sh
