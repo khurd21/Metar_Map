@@ -1,0 +1,12 @@
+<stationSettings>
+    <requestType>retrieve</requestType>
+    <format>xml</format>
+    <hoursBeforeNow>5</hoursBeforeNow>
+    <mostRecentForEachStation>true</mostRecentForEachStation>
+
+    <stations>
+        KSHN,
+        KHQM,
+        KSEA
+    </stations>
+</stationSettings>

@@ -1,0 +1,4 @@
+2022-07-31 10:44:19,026 [INFO]: Set the BASE_URL to:
+https://www.aviationweather.gov/adds/dataserver_current/httpparam?dataSource=metars&requestType=retrieve&format=json&hoursBeforeNow=5&mostRecentForEachStation=true&stationString=kshn
+2022-07-31 10:44:19,026 [DEBUG]: Starting new HTTPS connection (1): www.aviationweather.gov:443
+2022-07-31 10:44:19,274 [DEBUG]: https://www.aviationweather.gov:443 "GET /adds/dataserver_current/httpparam?dataSource=metars&requestType=retrieve&format=json&hoursBeforeNow=5&mostRecentForEachStation=true&stationString=kshn HTTP/1.1" 200 0
