@@ -26,6 +26,11 @@ response: HTTPResponse = http.request('GET', BASE_URL)
 
 print(type(response))
 print(response.status)
+read_response = response.read()
+
+print('READ RESPONSE')
+print(type(read_response))
+print(read_response)
 
 value: str = response.data.decode('utf-8')
 print(type(value))
